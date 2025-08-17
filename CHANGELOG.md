@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/adolfcg/nebo/compare/v1.6.0...v1.7.0) (2025-08-17)
+
+
+### Features
+
+* sonar cloud enabled ([8d97dc5](https://github.com/adolfcg/nebo/commit/8d97dc5be9563a25717cf94fd7a4e6041fead37a))
+
 # [1.6.0](https://github.com/adolfcg/nebo/compare/v1.5.0...v1.6.0) (2025-08-17)
 
 
