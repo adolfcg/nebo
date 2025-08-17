@@ -33,3 +33,12 @@ jobs:
           IMAGE_NAME: ghcr.io/${{ github.repository }}
         run: |
           semantic-release
+
+      - name: Send Discord notification
+        if: always()  # run whether success or failure
+        run: |
+          curl -H "Content-Type: application/json" \
+               -X POST \
+               -d "{\"content\": \"📦 *${{ github.repository }}* → `${{ github.workflow }}` **${{ job.status }}** on branch \`${{ github.ref_name }}\` by \`${{ github.actor }}\`\"}" \
+               ${{ secrets.DISCORD_WEBHOOK_URL }}
+

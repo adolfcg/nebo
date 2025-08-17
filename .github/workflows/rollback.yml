@@ -25,3 +25,12 @@ jobs:
           docker stop current_app || true
           docker rm current_app || true
           docker run -d --name current_app ghcr.io/${{ github.repository }}:${{ github.event.inputs.version }}
+      
+      - name: Notify Discord about rollback
+        if: always()
+        run: |
+          curl -H "Content-Type: application/json" \
+               -X POST \
+               -d "{\"content\": \"🔄 *${{ github.repository }}* → Rollback to version **${{ github.event.inputs.version }}** triggered by \`${{ github.actor }}\`: **${{ job.status }}**\"}" \
+               ${{ secrets.DISCORD_WEBHOOK_URL }}
+
