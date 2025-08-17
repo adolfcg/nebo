@@ -12,8 +12,8 @@ jobs:
   rollback:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
-      packages: read
+      contents: write
+      packages: write
 
     steps:
       - name: Docker login
