@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/adolfcg/nebo/compare/v1.3.0...v1.4.0) (2025-08-17)
+
+
+### Features
+
+* integrate sonarcloud scan on PR ([1b47d81](https://github.com/adolfcg/nebo/commit/1b47d815ca301f61b44cb2b47de9fb48416cd652))
+
 # [1.3.0](https://github.com/adolfcg/nebo/compare/v1.2.0...v1.3.0) (2025-08-17)
 
 
