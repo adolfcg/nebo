@@ -1,3 +1,5 @@
+name: Sonar Scan
+
 on:
   pull_request:
     branches:
@@ -33,4 +35,5 @@ jobs:
           -Dsonar.organization=Adolfo
           -Dsonar.sources=src
           -Dsonar.python.version=3.11
-          -Dsonar.token=${{ secrets.SONAR_TOKEN }}
+        env:
+         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
