@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/adolfcg/nebo/compare/v1.5.0...v1.6.0) (2025-08-17)
+
+
+### Features
+
+* security added plus ([6cea979](https://github.com/adolfcg/nebo/commit/6cea979dbbf7b3321908db20649c93a97e41672b))
+
 # [1.5.0](https://github.com/adolfcg/nebo/compare/v1.4.0...v1.5.0) (2025-08-17)
 
 
