@@ -19,5 +19,8 @@ feat/* for new features
 fix/* for bug fixes
 
 - Targeting main (protected branch)
+  - `feat/*` for new features
+  - `fix/*` for bug fixes
 
+- Targeting `main` (protected branch)
 - CI/CD and SonarCloud checks enforced via PR workflow
