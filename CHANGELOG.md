@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/adolfcg/nebo/compare/v1.1.0...v1.2.0) (2025-08-17)
+
+
+### Features
+
+* new changes adopted for discord ([162f4b3](https://github.com/adolfcg/nebo/commit/162f4b35736f11248455e6097cd18dccf452e47f))
+
 # [1.1.0](https://github.com/adolfcg/nebo/compare/v1.0.0...v1.1.0) (2025-08-17)
 
 
