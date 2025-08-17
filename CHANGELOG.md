@@ -1,3 +1,15 @@
+# [1.5.0](https://github.com/adolfcg/nebo/compare/v1.4.0...v1.5.0) (2025-08-17)
+
+
+### Features
+
+* security ([dda9e4a](https://github.com/adolfcg/nebo/commit/dda9e4aba876415ff751b4b2cd8890349352510b))
+* security added ([061676b](https://github.com/adolfcg/nebo/commit/061676baf61280c0cd74965c69b33447dc08e1ec))
+* security and sonar ([715a386](https://github.com/adolfcg/nebo/commit/715a38687f657dc1c3d64a53eeb78b54f2ff8388))
+* security and sonar and java ([f4fe222](https://github.com/adolfcg/nebo/commit/f4fe22275659c1e53d93f9917be9a581422fec9b))
+* security and sonar and java 17 ([94d21f4](https://github.com/adolfcg/nebo/commit/94d21f41b7f8e4de99a6f2d305b7835688177fc3))
+* security and sonar and java new ([c0214f0](https://github.com/adolfcg/nebo/commit/c0214f05b631a445e7f91904aa244ab9c326c24e))
+
 # [1.4.0](https://github.com/adolfcg/nebo/compare/v1.3.0...v1.4.0) (2025-08-17)
 
 
