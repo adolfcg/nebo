@@ -17,7 +17,6 @@ This repo contains all the files and code required for the NEBO evaluation.
 feat/* for new features
 
 fix/* for bug fixes
-
 - Targeting main (protected branch)
   - `feat/*` for new features
   - `fix/*` for bug fixes
