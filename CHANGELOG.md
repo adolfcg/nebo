@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/adolfcg/nebo/compare/v1.2.0...v1.3.0) (2025-08-17)
+
+
+### Features
+
+* new sonar controls ([228c650](https://github.com/adolfcg/nebo/commit/228c650c342f41ae6849230c41f706e5e4f720e2))
+
 # [1.2.0](https://github.com/adolfcg/nebo/compare/v1.1.0...v1.2.0) (2025-08-17)
 
 
