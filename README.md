@@ -14,7 +14,7 @@ This repo contains all the files and code required for the NEBO evaluation.
 
 - Only allow PRs from:
 
-  feat/* for new features, fix/* for bug fixes
+  feat/* for new features, fix/* for bug fixes.
 
 - Targeting `main` (protected branch)
 - CI/CD and SonarCloud checks enforced via PR workflow
