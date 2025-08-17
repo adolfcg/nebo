@@ -9,3 +9,17 @@ This repo contains all the files and code required for the NEBO evaluation.
 ![Rollback](https://github.com/adolfcg/nebo/actions/workflows/rollback.yml/badge.svg?branch=main)
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=adolfcg_nebo&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=adolfcg_nebo)
+
+## Branching Strategy
+
+- Only allow PRs from:
+
+feat/* for new features
+
+fix/* for bug fixes
+- Targeting main (protected branch)
+  - `feat/*` for new features
+  - `fix/*` for bug fixes
+
+- Targeting `main` (protected branch)
+- CI/CD and SonarCloud checks enforced via PR workflow
