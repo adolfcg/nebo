@@ -1,0 +1,35 @@
+name: Docker Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install semantic-release CLI and plugins
+        run: npm install -g semantic-release @semantic-release/changelog @semantic-release/git @semantic-release/exec
+
+      - name: Docker login
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u "${{ github.actor }}" --password-stdin
+
+      - name: Run semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # GitHub automatically provides this
+          IMAGE_NAME: ghcr.io/${{ github.repository }}
+        run: |
+          semantic-release

@@ -1,0 +1,27 @@
+name: Manual Rollback
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Docker image version to roll back to'
+        required: true
+        type: string
+
+jobs:
+  rollback:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: read
+
+    steps:
+      - name: Docker login
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u "${{ github.actor }}" --password-stdin
+
+      - name: Rollback container
+        run: |
+          docker pull ghcr.io/${{ github.repository }}:${{ github.event.inputs.version }}
+          docker stop current_app || true
+          docker rm current_app || true
+          docker run -d --name current_app ghcr.io/${{ github.repository }}:${{ github.event.inputs.version }}
