@@ -1,6 +1,6 @@
 # NEBO
 
-This repo contains all the files and code required for the NEBO evaluation....
+This repo contains all the files and code required for the NEBO evaluation.
 
 ## CI/CD Status
 
