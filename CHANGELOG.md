@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/adolfcg/nebo/compare/v1.7.0...v1.8.0) (2025-08-19)
+
+
+### Features
+
+* New big changes ([fc837f0](https://github.com/adolfcg/nebo/commit/fc837f0541fb7e82fb7d527f7202e00040151fb2))
+
 # [1.7.0](https://github.com/adolfcg/nebo/compare/v1.6.0...v1.7.0) (2025-08-17)
 
 
